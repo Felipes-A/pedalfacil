@@ -372,15 +372,7 @@ select:focus {
     background-color: #159946;
 }
 
-  .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e0e0e0;
-        }
+
 
         h1 {
             color: #1a1a1a;
