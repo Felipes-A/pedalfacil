@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedal Fácil - Aluguel de Bicicletas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/>
+            <path d="M5.5 17.5l3-8 4 3 2.5-5H19l-3.5 3.5"/>
+          </svg>
+    <!-- Cabeçalho / Navegação -->
+    <header class="header">
+        <div class="container header-flex">
+            <div class="logo">Pedal <span>Fácil</span></div>
+            <nav class="nav">
+                <a href="#como-funciona">Como Funciona</a>
+                <a href="#aluguel">Alugar Agora</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Pedale com liberdade, Sem complicação.</h1>
+            <p>Alugue sua bicicleta ideal para a sua aventura ou para o dia a dia. Frota variada, preços acessiveis e processo 100% online.</p>
+            <a href="#aluguel" class="btn">Alugar Bicicleta</a>
+        </div>
+    </section>
+
+
+
+
+    <!-- Banner Principal -->
+    <section class="banner">
+        <h1>Alugue sua bike de forma simples e rápida</h1>
+        <p>Escolha o modelo ideal e comece a pedalar hoje mesmo!</p>
+    </section>
+
+    <!-- Catálogo de Bicicletas -->
+    <section id="catalogo" class="catalogo">
+        <h2>Nossas Bicicletas</h2>
+        <p>Clique na foto ou no botão para iniciar o aluguel.</p>
+        
+        <div class="grid-bikes">
+            <!-- Bike 1 -->
+            <a href="#formulario" class="card-bike">
+                <img src="imagens/bike 2.avif" alt="Bicicleta Urbana">
+                <div class="card-info">
+                    <h3>Pedal Urbano</h3>
+                    <p>Ideal para o dia a dia na cidade.</p>
+                    <span class="btn-alugar">Alugar Agora</span>
+                </div>
+            </a>
+
+            <!-- Bike 2 -->
+            <a href="#formulario" class="card-bike">
+                <img src="imagens/bike 3.avif" alt="Bicicleta Eletrica">
+                <div class="card-info">
+                    <h3>Pedal Eletrico</h3>
+                    <p>Perfeita para terrenos de terra e aventura.</p>
+                    <span class="btn-alugar">Alugar Agora</span>
+                </div>
+            </a>
+
+            <!-- Bike 3 -->
+            <a href="#formulario" class="card-bike">
+                <img src="imagens/bike 4.avif" alt="Bicicleta">
+                <div class="card-info">
+                    <h3>Pedal trilha</h3>
+                    <p>Mais conforto e menos esforço na subida.</p>
+                    <span class="btn-alugar">Alugar Agora</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+ <!-- Formulário de Aluguel -->
+    <section id="aluguel" class="rent-section">
+        <div class="container form-container">
+            <h2>Solicite seu Aluguel</h2>
+            <p>Preencha as suas informações abaixo para reservar sua bicicleta.</p>
+            
+            <form action="#" method="POST" class="rent-form">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu email@exemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone / WhatsApp</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="data">Data de Retirada</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modelo">Modelo da Bike</label>
+                        <select id="modelo" name="modelo" required>
+                            <option value="">Selecione um modelo</option>
+                            <option value="urbana">Urbana (Passeio)</option>
+                            <option value="mountain">Mountain Bike (Trilha)</option>
+                            <option value="eletrica">Elétrica</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-block">Confirmar Reserva</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2026 Pedal Fácil. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
