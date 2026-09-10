@@ -1,0 +1,373 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'outifit', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cores do projeto */
+root {
+  --green: #16a34a;
+  --green-dark: #15803d;
+  --green-light: #dcfce7;
+  --green-pale: #f0fdf4;
+  --slate-900: #0f172a;
+  --slate-700: #334155;
+  --slate-500: #64748b;
+  --slate-400: #94a3b8;
+  --slate-200: #e2e8f0;
+  --slate-100: #f1f5f9;
+  --white: #ffffff;
+  --bg: #f8fafc;
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+/* Cabeçalho */
+.header {
+    background-color: #ffffff;
+    border-bottom: 2px solid var(--cinza-claro);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #16A34A;
+}
+
+.logo span {
+    color: var(--verde-principal);
+}
+
+.nav a {
+    color: #16A34A;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: var(--verde-principal);
+}
+
+/* Seção Hero (Banner) */
+.hero {
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('https://unsplash.com') no-repeat center center/cover;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 18px;
+    color: #16A34A;
+    margin-bottom: 30px;
+}
+
+/* Botões */
+.btn {
+    background-color: var(--verde-principal);
+    color: #111111;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: var(--verde-escuro);
+    color: #16A34A;
+}
+
+.btn-block {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Seção do Formulário */
+.rent-section {
+    padding: 60px 0;
+    background-color: #16A34A;
+}
+
+.form-container {
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid var(--verde-principal);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #16A34A;
+}
+
+.form-container p {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* Grupos do Formulário */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #16A34A;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--borda);
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 15px;
+    color: #111111;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: var(--verde-principal);
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid var(--cinza-claro);
+    background-color: #ffffff;
+    color: #999999;
+    font-size: 14px;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://unsplash.com') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.banner h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+/* Catálogo */
+.catalogo {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.catalogo h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.catalogo p {
+    color: #16A34A;
+    margin-bottom: 40px;
+}
+
+.grid-bikes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Cartão da Bike (Tornando a foto e o botão clicáveis) */
+.card-bike {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-bike:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card-bike img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 20px;
+}
+
+.card-info h3 {
+    margin-bottom: 10px;
+    color: #159946;
+}
+
+.card-info p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.btn-alugar {
+    display: block;
+    background-color: #16A34A;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.card-bike:hover .btn-alugar {
+    background-color: #16A34A;
+}
+
+/* Seção do Formulário */
+.secao-formulario {
+    background-color: #ecf0f1;
+    padding: 60px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.container-form h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.container-form p {
+    font-size: 14px;
+    color: #16A34A;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.campo input:focus {
+    border-color: #16A34A;
+}
+
+.btn-enviar {
+    width: 100%;
+    background-color: #16A34A;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #159946;
+}
