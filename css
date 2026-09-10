@@ -372,19 +372,17 @@ select:focus {
     background-color: #159946;
 }
 
+ h1 {
+color: #1a1a1a;
+font-size: 24px;
+margin-bottom: 10px;
+}
 
-
-        h1 {
-            color: #1a1a1a;
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 14px;
-            color: #666666;
-            line-height: 1.6;
-        }
+p {
+font-size: 14px;
+color: #666666;
+line-height: 1.6;
+}
 
         /* Passos do Processo (Estrutura Limpa) */
         .passos-lista {
