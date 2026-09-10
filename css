@@ -371,3 +371,49 @@ select:focus {
 .btn-enviar:hover {
     background-color: #159946;
 }
+
+  .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e0e0e0;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #666666;
+            line-height: 1.6;
+        }
+
+        /* Passos do Processo (Estrutura Limpa) */
+        .passos-lista {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0;
+        }
+
+        .passo-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-left: 4px solid #2ecc71; /* Detalhe em Verde */
+            background-color: #f9f9f9;
+        }
+
+        /* Detalhes em Verde (Destaques) */
+        .numero-passo {
+            font-weight: bold;
+            color: #2ecc71; /* Verde */
+            margin-right: 10px;
+            font-size: 18px;
+        }
