@@ -407,19 +407,30 @@
                 PERÍODO DO EMPRÉSTIMO
             </h4>
 
-
             <div class="linha">
 
+                <div>
+
+                    <label>
+                    Data da retirada *
+                    </label>
+
+                    <input
+                    type="date"
+                    required
+                    >
+
+                </div>
 
                 <div>
 
                     <label>
-                        Data da retirada *
+                   Horário da retirada *
                     </label>
 
                     <input
-                        type="date"
-                        required
+                    type="time"
+                    required
                     >
 
                 </div>
@@ -428,34 +439,17 @@
                 <div>
 
                     <label>
-                        Horário da retirada *
+                    Data de devolução *
                     </label>
 
                     <input
-                        type="time"
-                        required
+                    type="date"
+                    required
                     >
 
                 </div>
-
-
-                <div>
-
-                    <label>
-                        Data de devolução *
-                    </label>
-
-                    <input
-                        type="date"
-                        required
-                    >
-
-                </div>
-
 
             </div>
-
-
 
             <!-- VALOR -->
 
@@ -466,22 +460,21 @@
                     <span>
                         2 dias × R$
                         <span id="valorDia">
-                            45
+                        45
                         </span>
                     </span>
 
                     <small>
-                        Pagamento na retirada
+                    Pagamento na retirada
                     </small>
 
                 </div>
-
 
                 <strong>
 
                     R$
                     <span id="valorFinal">
-                        90
+                    90
                     </span>
                     ,00
 
@@ -489,69 +482,52 @@
 
             </div>
 
-
-
             <button
-                type="submit"
-                class="confirmar">
-
-                Confirmar reserva
-
+            type="submit"
+            class="confirmar">
+            Confirmar reserva
             </button>
-
-
         </form>
 
     </main>
 
 </div>
 
-
-
-<!-- =========================
-     PÁGINA CONFIRMADA
-========================= -->
+<!--PÁGINA CONFIRMADA-->
 
 <div id="paginaConfirmada"
      class="esconder">
-
-
     <main class="confirmacao">
-
-
         <div class="check">
-            ✓
+       ✓
         </div>
 
-
         <h1>
-            Reserva confirmada!
+        Reserva confirmada!
         </h1>
-
 
         <p>
 
             Obrigado,
             <span id="nomeCliente">
-                Maria Silva
+            Maria Silva
             </span>!
 
             Sua reserva da
 
             <span id="bikeConfirmada">
-                Trek X-Cal 29
+            Trek X-Cal 29
             </span>
 
             foi recebida.
 
         </p>
 
-
         <button
             onclick="voltarInicio()"
             class="botao">
 
-            Voltar ao catálogo
+        Voltar ao catálogo
 
         </button>
 
@@ -559,8 +535,6 @@
     </main>
 
 </div>
-
-
 
 <!-- =========================
      JAVASCRIPT
