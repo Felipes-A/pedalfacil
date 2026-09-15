@@ -2,132 +2,237 @@
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Pedal Fácil</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <!-- MENU -->
-    <header>
-        <div class="logo">
-            🚲 <b>Pedal</b> <span>Fácil</span>
-        </div>
-        <nav>
-            <a href="#inicio">Bikes</a>
-            <a href="#como">Como funciona</a>
-            <a href="#bikes" class="botao">Alugar</a>
-        </nav>
-    </header>
 
-    <!-- PRINCIPAL -->
-    <section class="inicio" id="inicio">
+
+<!-- =========================
+     MENU
+========================= -->
+
+<header>
+
+    <div class="logo">
+        🚲 <b>Pedal</b> <span>Fácil</span>
+    </div>
+
+    <nav>
+
+        <a href="#" onclick="inicio()">Bikes</a>
+
+        <a href="#como">
+            Como funciona
+        </a>
+
+        <a href="#bikes"
+           class="botao">
+            Alugar
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================
+     PÁGINA INICIAL
+========================= -->
+
+<div id="paginaInicial">
+
+
+    <!-- INÍCIO -->
+
+    <section class="inicio">
+
         <div class="texto">
-            <small>LOCAÇÃO DE BICICLETAS</small>
+
+            <small>
+                LOCAÇÃO DE BICICLETAS
+            </small>
+
             <h1>
+
                 Pedale com
                 <span>liberdade</span>,
                 sem complicação.
+
             </h1>
+
             <p>
+
                 Alugue a bike ideal para sua aventura
                 ou para o dia a dia. Frota variada,
                 preços acessíveis e processo simples.
+
             </p>
-            <a href="#bikes" class="botao grande">
+
+            <a href="#bikes"
+               class="botao grande">
+
                 Ver bikes disponíveis
+
             </a>
-            <a href="#como" class="link">
+
+            <a href="#como"
+               class="link">
+
                 Como funciona?
+
             </a>
+
+
             <div class="numeros">
+
                 <div>
+
                     <b>50+</b>
+
                     <p>BIKES</p>
+
                 </div>
+
+
                 <div>
+
                     <b>4.9★</b>
+
                     <p>AVALIAÇÃO</p>
+
                 </div>
+
+
                 <div>
+
                     <b>3k+</b>
+
                     <p>CLIENTES</p>
+
                 </div>
+
             </div>
+
         </div>
 
 
         <div class="imagem-principal">
 
-            <img src="imagens/photo-1629056528325-f328b5f27ae7.avif">
+            <img src="imagens/bike1.jpg">
 
             <div class="aviso">
-                ✓ <b>Bikes disponíveis hoje</b>
+
+                ✓
+
+                <b>
+                    Bikes disponíveis hoje
+                </b>
+
             </div>
 
         </div>
 
     </section>
+
 
 
     <!-- COMO FUNCIONA -->
 
-    <section class="como" id="como">
+    <section class="como"
+            id="como">
 
-        <h2>Como funciona</h2>
+        <h2>
+            Como funciona
+        </h2>
+
 
         <div class="passos">
 
+
             <div class="passo">
+
                 <strong>01</strong>
 
-                <h3>Escolha sua bike</h3>
+                <h3>
+                    Escolha sua bike
+                </h3>
 
                 <p>
+
                     Navegue pelo catálogo e selecione
                     o modelo ideal para você.
+
                 </p>
+
             </div>
 
 
             <div class="passo">
+
                 <strong>02</strong>
 
-                <h3>Preencha o cadastro</h3>
+                <h3>
+                    Preencha o cadastro
+                </h3>
 
                 <p>
+
                     Informe seus dados, período de uso
                     e horário de retirada.
+
                 </p>
+
             </div>
 
 
             <div class="passo">
+
                 <strong>03</strong>
 
-                <h3>Retire e pedale!</h3>
+                <h3>
+                    Retire e pedale!
+                </h3>
 
                 <p>
+
                     Venha buscar no nosso endereço
                     e aproveite ao máximo.
+
                 </p>
+
             </div>
+
 
         </div>
 
     </section>
 
 
-    <!-- BIKES -->
 
-    <section class="catalogo" id="bikes">
+    <!-- CATÁLOGO -->
 
-        <small>CATÁLOGO</small>
+    <section class="catalogo"
+            id="bikes">
 
-        <h2>Bikes disponíveis</h2>
+        <small>
+            CATÁLOGO
+        </small>
+
+        <h2>
+            Bikes disponíveis
+        </h2>
+
 
         <div class="bikes">
 
@@ -136,106 +241,166 @@
 
             <div class="bike">
 
-                <img src="imagens/bike 2.avif">
+                <img src="imagens/bike1.jpg">
 
-                <small>MOUNTAIN BIKE</small>
+                <small>
+                    MOUNTAIN BIKE
+                </small>
 
-                <h3>Trek X-Cal 29</h3>
+                <h3>
+                    Trek X-Cal 29
+                </h3>
 
                 <p>
+
                     Suspensão dianteira e freios
                     hidráulicos. Ideal para trilhas.
+
                 </p>
 
-                <span>A partir de</span>
+                <span>
+                    A partir de
+                </span>
 
-                <b>R$ 45/dia</b>
+                <b>
+                    R$ 45/dia
+                </b>
 
-                <a href="reserva.html" class="botao">
+
+                <button
+                    onclick="abrirReserva('Trek X-Cal 29', 45)">
+
                     Alugue sua bike
-                </a>
+
+                </button>
 
             </div>
+
 
 
             <!-- BIKE 2 -->
 
             <div class="bike">
 
-                <img src="imagens/bike 2.2.jpg">
+                <img src="imagens/bike2.jpg">
 
-                <small>BICICLETA URBANA</small>
+                <small>
+                    BICICLETA URBANA
+                </small>
 
-                <h3>City Classic Urban</h3>
+                <h3>
+                    City Classic Urban
+                </h3>
 
                 <p>
+
                     Quadro leve e alumínio.
                     Ideal para passeios pela cidade.
+
                 </p>
 
-                <span>A partir de</span>
+                <span>
+                    A partir de
+                </span>
 
-                <b>R$ 28/dia</b>
+                <b>
+                    R$ 28/dia
+                </b>
 
-                <a href="reserva.html" class="botao">
+
+                <button
+                    onclick="abrirReserva('City Classic Urban', 28)">
+
                     Alugue sua bike
-                </a>
+
+                </button>
 
             </div>
+
 
 
             <!-- BIKE 3 -->
 
             <div class="bike">
 
-                <img src="imagens/bike 3.avif">
+                <img src="imagens/bike3.jpg">
 
-                <small>ELÉTRICA</small>
+                <small>
+                    ELÉTRICA
+                </small>
 
-                <h3>KBO E-Bike Breeze</h3>
+                <h3>
+                    KBO E-Bike Breeze
+                </h3>
 
                 <p>
+
                     Motor elétrico com autonomia
                     para longas distâncias.
+
                 </p>
 
-                <span>A partir de</span>
+                <span>
+                    A partir de
+                </span>
 
-                <b>R$ 75/dia</b>
+                <b>
+                    R$ 75/dia
+                </b>
 
-                <a href="reserva.html" class="botao">
+
+                <button
+                    onclick="abrirReserva('KBO E-Bike Breeze', 75)">
+
                     Alugue sua bike
-                </a>
 
-            </div>
-
-
-            <!-- BIKE 4 -->
-
-            <div class="bike indisponivel">
-
-                <img src="imagens/bike 4.avif">
-
-                <small>SPEED / ESTRADA</small>
-
-                <h3>Veloz Road 700c</h3>
-
-                <p>
-                    Quadro de carbono leve,
-                    ideal para velocidade.
-                </p>
-
-                <span>A partir de</span>
-
-                <b>R$ 60/dia</b>
-
-                <button disabled>
-                    Indisponível
                 </button>
 
             </div>
 
+
+
+            <!-- BIKE 4 -->
+
+            <div class="bike">
+
+                <img src="imagens/bike4.jpg">
+
+                <small>
+                    SPEED / ESTRADA
+                </small>
+
+                <h3>
+                    Veloz Road 700c
+                </h3>
+
+                <p>
+
+                    Quadro de carbono leve,
+                    ideal para velocidade.
+
+                </p>
+
+                <span>
+                    A partir de
+                </span>
+
+                <b>
+                    R$ 60/dia
+                </b>
+
+
+                <button disabled>
+
+                    Indisponível
+
+                </button>
+
+            </div>
+
+
         </div>
+
 
 
         <!-- BANNER -->
@@ -243,26 +408,535 @@
         <div class="banner">
 
             <div>
-                <h2>Pronto para pedalar?</h2>
+
+                <h2>
+                    Pronto para pedalar?
+                </h2>
 
                 <p>
+
                     Faça sua reserva agora e aproveite
                     a liberdade sobre duas rodas.
+
                 </p>
+
             </div>
 
-            <a href="reserva.html">
+
+            <a href="#bikes">
+
                 Alugue sua bike →
+
             </a>
 
         </div>
 
+
     </section>
 
 
-    <footer>
-        © 2026 Pedal Fácil
-    </footer>
+</div>
+
+
+
+<!-- =========================
+     PÁGINA DE RESERVA
+========================= -->
+
+<div id="paginaReserva"
+     class="esconder">
+
+
+    <main class="formulario">
+
+        <a href="#bikes"
+           onclick="voltarCatalogo()">
+
+            ← Voltar
+
+        </a>
+
+
+        <small>
+            FORMULÁRIO DE RESERVA
+        </small>
+
+        <h1>
+            Finalize seu aluguel
+        </h1>
+
+
+
+        <!-- BIKE ESCOLHIDA -->
+
+        <div class="bike-escolhida">
+
+            <img id="imagemBike"
+                 src="imagens/bike1.jpg">
+
+
+            <div>
+
+                <small id="tipoBike">
+                    MOUNTAIN BIKE
+                </small>
+
+                <h3 id="nomeBike">
+                    Trek X-Cal 29
+                </h3>
+
+                <p>
+                    R$ <span id="precoBike">45</span>
+                    / dia
+                </p>
+
+            </div>
+
+
+            <strong>
+                R$ <span id="valorTotal">90</span>,00
+            </strong>
+
+        </div>
+
+
+
+        <!-- FORMULÁRIO -->
+
+        <form id="formularioReserva">
+
+
+            <h4>
+                DADOS PESSOAIS
+            </h4>
+
+
+            <label>
+                Nome completo *
+            </label>
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Ex: Maria Silva"
+                required
+            >
+
+
+            <label>
+                Telefone *
+            </label>
+
+            <input
+                type="tel"
+                placeholder="(11) 99999-0000"
+                required
+            >
+
+
+
+            <h4>
+                ENDEREÇO COMPLETO
+            </h4>
+
+
+            <div class="linha">
+
+                <div>
+
+                    <label>CEP *</label>
+
+                    <input
+                        type="text"
+                        placeholder="00000-000"
+                        required
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label>
+                        Logradouro *
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Rua, Avenida, etc."
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <div class="linha">
+
+                <div>
+
+                    <label>
+                        Número *
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="123"
+                        required
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label>
+                        Bairro *
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Nome do bairro"
+                        required
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label>
+                        Cidade *
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="São Paulo"
+                        required
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label>
+                        UF *
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="SP"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <h4>
+                PERÍODO DO EMPRÉSTIMO
+            </h4>
+
+
+            <div class="linha">
+
+
+                <div>
+
+                    <label>
+                        Data da retirada *
+                    </label>
+
+                    <input
+                        type="date"
+                        required
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label>
+                        Horário da retirada *
+                    </label>
+
+                    <input
+                        type="time"
+                        required
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label>
+                        Data de devolução *
+                    </label>
+
+                    <input
+                        type="date"
+                        required
+                    >
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- VALOR -->
+
+            <div class="valor">
+
+                <div>
+
+                    <span>
+                        2 dias × R$
+                        <span id="valorDia">
+                            45
+                        </span>
+                    </span>
+
+                    <small>
+                        Pagamento na retirada
+                    </small>
+
+                </div>
+
+
+                <strong>
+
+                    R$
+                    <span id="valorFinal">
+                        90
+                    </span>
+                    ,00
+
+                </strong>
+
+            </div>
+
+
+
+            <button
+                type="submit"
+                class="confirmar">
+
+                Confirmar reserva
+
+            </button>
+
+
+        </form>
+
+    </main>
+
+</div>
+
+
+
+<!-- =========================
+     PÁGINA CONFIRMADA
+========================= -->
+
+<div id="paginaConfirmada"
+     class="esconder">
+
+
+    <main class="confirmacao">
+
+
+        <div class="check">
+            ✓
+        </div>
+
+
+        <h1>
+            Reserva confirmada!
+        </h1>
+
+
+        <p>
+
+            Obrigado,
+            <span id="nomeCliente">
+                Maria Silva
+            </span>!
+
+            Sua reserva da
+
+            <span id="bikeConfirmada">
+                Trek X-Cal 29
+            </span>
+
+            foi recebida.
+
+        </p>
+
+
+        <button
+            onclick="voltarInicio()"
+            class="botao">
+
+            Voltar ao catálogo
+
+        </button>
+
+
+    </main>
+
+</div>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+
+let nomeDaBike = "";
+let precoDaBike = 0;
+
+
+
+function abrirReserva(nome, preco) {
+
+    nomeDaBike = nome;
+
+    precoDaBike = preco;
+
+
+    document.getElementById("nomeBike")
+        .innerText = nome;
+
+
+    document.getElementById("precoBike")
+        .innerText = preco;
+
+
+    document.getElementById("valorDia")
+        .innerText = preco;
+
+
+    document.getElementById("valorTotal")
+        .innerText = preco * 2;
+
+
+    document.getElementById("valorFinal")
+        .innerText = preco * 2;
+
+
+    document.getElementById("paginaInicial")
+        .classList.add("esconder");
+
+
+    document.getElementById("paginaReserva")
+        .classList.remove("esconder");
+
+
+    window.scrollTo(0, 0);
+
+}
+
+
+
+document.getElementById("formularioReserva")
+    .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+
+        let nome =
+            document.getElementById("nome").value;
+
+
+        document.getElementById("nomeCliente")
+            .innerText = nome;
+
+
+        document.getElementById("bikeConfirmada")
+            .innerText = nomeDaBike;
+
+
+        document.getElementById("paginaReserva")
+            .classList.add("esconder");
+
+
+        document.getElementById("paginaConfirmada")
+            .classList.remove("esconder");
+
+
+        window.scrollTo(0, 0);
+
+    });
+
+
+
+function voltarInicio() {
+
+    document.getElementById("paginaConfirmada")
+        .classList.add("esconder");
+
+
+    document.getElementById("paginaInicial")
+        .classList.remove("esconder");
+
+
+    window.scrollTo(0, 0);
+
+}
+
+
+
+function voltarCatalogo() {
+
+    document.getElementById("paginaReserva")
+        .classList.add("esconder");
+
+
+    document.getElementById("paginaInicial")
+        .classList.remove("esconder");
+
+
+    document.getElementById("bikes")
+        .scrollIntoView();
+
+}
+
+
+
+function inicio() {
+
+    document.getElementById("paginaReserva")
+        .classList.add("esconder");
+
+
+    document.getElementById("paginaConfirmada")
+        .classList.add("esconder");
+
+
+    document.getElementById("paginaInicial")
+        .classList.remove("esconder");
+
+
+    window.scrollTo(0, 0);
+
+}
+
+
+</script>
+
 
 </body>
+
 </html>
