@@ -169,44 +169,34 @@
 <strong>R$ <span id="valorTotal">90</span>,00</strong>
 </div>
 
-        <!-- FORMULÁRIO -->
+<!-- FORMULÁRIO -->
+ <form id="formularioReserva">
+<h4>DADOS PESSOAIS</h4>
+<label>Nome completo *</label>
+<input
+    type="text"
+    id="nome"
+    placeholder="Ex: Maria Silva"
+    required
+    >
 
-        <form id="formularioReserva">
-            <h4>
-            DADOS PESSOAIS
-            </h4>
-            <label>
-            Nome completo *
-            </label>
-            <input
-            type="text"
-            id="nome"
-            placeholder="Ex: Maria Silva"
-            required
+    <label>
+    Telefone *
+    </label>
+
+    <input
+    type="tel"
+    placeholder="(11) 99999-0000"                required
             >
+<h4>ENDEREÇO COMPLETO</h4>
 
-            <label>
-           Telefone *
-            </label>
+        <div class="linha"><div>
+        <label>CEP *</label>
 
-            <input
-            type="tel"
-            placeholder="(11) 99999-0000"                required
-            >
-
-            <h4>
-           ENDEREÇO COMPLETO
-            </h4>
-
-            <div class="linha">
-                <div>
-                <label>CEP *</label>
-
-                <input
-                type="text"
-                placeholder="00000-000"
-                required
-                 >
+        <input
+        type="text"
+        placeholder="00000-000"
+        required>
 
                 </div>
 
