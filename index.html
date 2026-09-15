@@ -2,391 +2,230 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-
     <title>Pedal Fácil</title>
-
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-
-
-<!-- =========================
-     MENU
-========================= -->
-
+<!--MENU -->
 <header>
-
     <div class="logo">
         🚲 <b>Pedal</b> <span>Fácil</span>
     </div>
-
     <nav>
-
         <a href="#" onclick="inicio()">Bikes</a>
-
         <a href="#como">
             Como funciona
         </a>
-
         <a href="#bikes"
            class="botao">
             Alugar
         </a>
-
     </nav>
-
 </header>
 
 
 
-<!-- =========================
-     PÁGINA INICIAL
-========================= -->
+<!-- PÁGINA INICIAL -->
 
 <div id="paginaInicial">
-
-
     <!-- INÍCIO -->
-
     <section class="inicio">
-
         <div class="texto">
-
             <small>
                 LOCAÇÃO DE BICICLETAS
             </small>
-
             <h1>
-
                 Pedale com
                 <span>liberdade</span>,
                 sem complicação.
-
             </h1>
-
             <p>
-
                 Alugue a bike ideal para sua aventura
                 ou para o dia a dia. Frota variada,
                 preços acessíveis e processo simples.
-
             </p>
-
             <a href="#bikes"
                class="botao grande">
-
                 Ver bikes disponíveis
-
             </a>
-
             <a href="#como"
                class="link">
-
                 Como funciona?
-
             </a>
-
-
             <div class="numeros">
-
                 <div>
-
                     <b>50+</b>
-
                     <p>BIKES</p>
-
                 </div>
-
-
                 <div>
-
                     <b>4.9★</b>
-
                     <p>AVALIAÇÃO</p>
-
                 </div>
-
-
                 <div>
-
                     <b>3k+</b>
-
                     <p>CLIENTES</p>
-
                 </div>
-
             </div>
-
         </div>
-
-
         <div class="imagem-principal">
-
-            <img src="imagens/bike1.jpg">
-
+            <img src="imagens/photo-1629056528325-f328b5f27ae7.avif">
             <div class="aviso">
-
                 ✓
-
                 <b>
                     Bikes disponíveis hoje
                 </b>
-
             </div>
-
         </div>
-
     </section>
-
-
-
     <!-- COMO FUNCIONA -->
-
     <section class="como"
             id="como">
-
         <h2>
             Como funciona
         </h2>
-
-
         <div class="passos">
-
-
             <div class="passo">
-
                 <strong>01</strong>
-
                 <h3>
                     Escolha sua bike
                 </h3>
-
                 <p>
-
                     Navegue pelo catálogo e selecione
                     o modelo ideal para você.
-
                 </p>
-
             </div>
-
-
             <div class="passo">
-
                 <strong>02</strong>
-
                 <h3>
                     Preencha o cadastro
                 </h3>
-
                 <p>
-
                     Informe seus dados, período de uso
                     e horário de retirada.
-
                 </p>
-
             </div>
-
-
             <div class="passo">
-
                 <strong>03</strong>
-
                 <h3>
                     Retire e pedale!
                 </h3>
-
                 <p>
-
                     Venha buscar no nosso endereço
                     e aproveite ao máximo.
-
                 </p>
-
             </div>
-
-
         </div>
-
     </section>
-
-
 
     <!-- CATÁLOGO -->
 
     <section class="catalogo"
             id="bikes">
-
         <small>
             CATÁLOGO
         </small>
-
         <h2>
             Bikes disponíveis
         </h2>
-
-
         <div class="bikes">
-
-
             <!-- BIKE 1 -->
-
             <div class="bike">
-
-                <img src="imagens/bike1.jpg">
-
+                <img src="imagens/bike 2.avif">
                 <small>
                     MOUNTAIN BIKE
                 </small>
-
                 <h3>
                     Trek X-Cal 29
                 </h3>
-
                 <p>
-
                     Suspensão dianteira e freios
                     hidráulicos. Ideal para trilhas.
-
                 </p>
-
                 <span>
                     A partir de
                 </span>
-
                 <b>
                     R$ 45/dia
                 </b>
-
-
                 <button
                     onclick="abrirReserva('Trek X-Cal 29', 45)">
-
                     Alugue sua bike
-
                 </button>
-
             </div>
-
-
-
             <!-- BIKE 2 -->
-
             <div class="bike">
-
-                <img src="imagens/bike2.jpg">
-
+                <img src="imagens/bike 2.2.jpg">
                 <small>
                     BICICLETA URBANA
                 </small>
-
                 <h3>
                     City Classic Urban
                 </h3>
-
                 <p>
-
                     Quadro leve e alumínio.
                     Ideal para passeios pela cidade.
-
                 </p>
-
                 <span>
                     A partir de
                 </span>
-
                 <b>
                     R$ 28/dia
                 </b>
-
-
                 <button
                     onclick="abrirReserva('City Classic Urban', 28)">
-
                     Alugue sua bike
-
                 </button>
-
             </div>
 
-
-
             <!-- BIKE 3 -->
-
             <div class="bike">
-
-                <img src="imagens/bike3.jpg">
-
+                <img src="imagens/bike 3.avif">
                 <small>
                     ELÉTRICA
                 </small>
-
                 <h3>
                     KBO E-Bike Breeze
                 </h3>
-
                 <p>
-
                     Motor elétrico com autonomia
                     para longas distâncias.
-
                 </p>
-
                 <span>
                     A partir de
                 </span>
-
                 <b>
                     R$ 75/dia
                 </b>
-
-
                 <button
                     onclick="abrirReserva('KBO E-Bike Breeze', 75)">
-
                     Alugue sua bike
-
                 </button>
-
             </div>
-
-
 
             <!-- BIKE 4 -->
 
             <div class="bike">
-
                 <img src="imagens/bike4.jpg">
-
                 <small>
-                    SPEED / ESTRADA
+                SPEED / ESTRADA
                 </small>
-
                 <h3>
-                    Veloz Road 700c
+                Veloz Road 700c
                 </h3>
-
                 <p>
-
-                    Quadro de carbono leve,
-                    ideal para velocidade.
-
+                Quadro de carbono leve,
+                ideal para velocidade.
                 </p>
-
                 <span>
-                    A partir de
+                A partir de
                 </span>
-
                 <b>
-                    R$ 60/dia
+                R$ 60/dia
                 </b>
 
 
