@@ -536,6 +536,88 @@
 
 </div>
 
-</body>
+<script>
+
+let nomeDaBike = "";
+let precoDaBike = 0;
+
+
+// ABRIR PÁGINA DE RESERVA
+function abrirReserva(nome, preco) {
+
+    nomeDaBike = nome;
+    precoDaBike = preco;
+
+    document.getElementById("nomeBike").innerText = nome;
+    document.getElementById("precoBike").innerText = "R$ " + preco;
+    document.getElementById("valorDia").innerText = "R$ " + preco;
+
+    // Reserva de 2 dias
+    let total = preco * 2;
+
+    document.getElementById("valorTotal").innerText = "R$ " + total;
+    document.getElementById("valorFinal").innerText = "R$ " + total;
+
+    // Troca de página
+    document.getElementById("paginaInicial").classList.add("esconder");
+    document.getElementById("paginaReserva").classList.remove("esconder");
+
+    window.scrollTo(0, 0);
+}
+
+
+// CONFIRMAR RESERVA
+document.getElementById("formularioReserva").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let nome = document.getElementById("nome").value;
+
+    document.getElementById("nomeCliente").innerText = nome;
+    document.getElementById("bikeConfirmada").innerText = nomeDaBike;
+
+    // Vai para a página de confirmação
+    document.getElementById("paginaReserva").classList.add("esconder");
+    document.getElementById("paginaConfirmada").classList.remove("esconder");
+
+    window.scrollTo(0, 0);
+});
+
+
+// VOLTAR PARA O INÍCIO
+function voltarInicio() {
+
+    document.getElementById("paginaConfirmada").classList.add("esconder");
+    document.getElementById("paginaInicial").classList.remove("esconder");
+
+    window.scrollTo(0, 0);
+}
+
+
+// VOLTAR PARA O CATÁLOGO
+function voltarCatalogo() {
+
+    document.getElementById("paginaReserva").classList.add("esconder");
+    document.getElementById("paginaInicial").classList.remove("esconder");
+
+    document.getElementById("bikes").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+
+// BOTÃO INÍCIO DO MENU
+function inicio() {
+
+    document.getElementById("paginaReserva").classList.add("esconder");
+    document.getElementById("paginaConfirmada").classList.add("esconder");
+
+    document.getElementById("paginaInicial").classList.remove("esconder");
+
+    window.scrollTo(0, 0);
+}
+
+</script>
+ 
 
 </html>
