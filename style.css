@@ -161,41 +161,31 @@ nav a {
 
 .como {
     background: #eef3f7;
-
     padding: 55px 10%;
 }
 
 .como h2 {
     text-align: center;
-
     margin-bottom: 35px;
 }
 
 .passos {
     max-width: 1000px;
-
     margin: auto;
-
     display: flex;
-
     gap: 20px;
 }
 
 .passo {
     background: white;
-
     padding: 25px;
-
     border-radius: 16px;
-
     flex: 1;
-
     position: relative;
 }
 
 .passo strong {
     color: #16a34a;
-
     font-size: 11px;
 }
 
@@ -205,9 +195,7 @@ nav a {
 
 .passo p {
     color: #667085;
-
     font-size: 13px;
-
     line-height: 1.5;
 }
 
@@ -218,9 +206,7 @@ nav a {
 
 .catalogo {
     max-width: 1100px;
-
     margin: auto;
-
     padding: 60px 30px;
 }
 
@@ -230,102 +216,72 @@ nav a {
 
 .bikes {
     display: grid;
-
     grid-template-columns:
-        repeat(4, 1fr);
-
+    repeat(4, 1fr);
     gap: 12px;
 }
 
 .bike {
     background: white;
-
     border: 1px solid #e2e6e9;
-
     border-radius: 12px;
-
     overflow: hidden;
-
     padding-bottom: 15px;
 }
 
 .bike img {
     width: 100%;
-
     height: 120px;
-
     object-fit: cover;
 }
 
 .bike small {
     display: block;
-
     color: #16a34a;
-
     font-size: 8px;
-
     font-weight: bold;
-
     margin: 12px;
 }
 
 .bike h3 {
     font-size: 14px;
-
     margin: 0 12px 8px;
 }
 
 .bike p {
     color: #667085;
-
     font-size: 10px;
-
     line-height: 1.5;
-
     margin: 0 12px 15px;
 }
 
 .bike span {
     display: block;
-
     color: #999;
-
     font-size: 9px;
-
     margin: 0 12px 3px;
 }
 
 .bike > b {
     display: block;
-
     margin: 0 12px 12px;
 }
 
 .bike .botao {
     margin: 0 12px;
-
     width: calc(100% - 24px);
-
     text-align: center;
-
     padding: 9px;
-
     font-size: 11px;
 }
 
 .bike button {
     margin: 0 12px;
-
     width: calc(100% - 24px);
-
     padding: 9px;
-
     border: none;
-
     border-radius: 20px;
-
     background: #edf0f2;
-
     color: #999;
 }
 
@@ -336,19 +292,12 @@ nav a {
 
 .banner {
     margin-top: 10px;
-
     padding: 30px;
-
     background: #159447;
-
     color: white;
-
     border-radius: 15px;
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
 }
 
