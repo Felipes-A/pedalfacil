@@ -1,407 +1,711 @@
-/* Configurações Gerais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'outifit', sans-serif;
 }
 
 body {
-    background-color: #ffffff;
-    color: #333333;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background: #f7f9fa;
+    color: #071936;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-/* Cores do projeto */
-root {
-  --green: #16a34a;
-  --green-dark: #15803d;
-  --green-light: #dcfce7;
-  --green-pale: #f0fdf4;
-  --slate-900: #0f172a;
-  --slate-700: #334155;
-  --slate-500: #64748b;
-  --slate-400: #94a3b8;
-  --slate-200: #e2e8f0;
-  --slate-100: #f1f5f9;
-  --white: #ffffff;
-  --bg: #f8fafc;
-  --font-display: 'Outfit', sans-serif;
-  --font-body: 'Inter', sans-serif;
-}
-/* Cabeçalho */
-.header {
-    background-color: #ffffff;
-    border-bottom: 2px solid var(--cinza-claro);
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
+/* =====================
+   MENU
+===================== */
 
-.header-flex {
+header {
+    height: 65px;
+    background: white;
+    border-bottom: 1px solid #e5e8eb;
+
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+
+    padding: 0 10%;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #16A34A;
+    font-size: 18px;
 }
 
 .logo span {
-    color: var(--verde-principal);
+    color: #16a34a;
 }
 
-.nav a {
-    color: #16A34A;
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
     text-decoration: none;
-    margin-left: 20px;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-.nav a:hover {
-    color: var(--verde-principal);
-}
-
-/* Seção Hero (Banner) */
-.hero {
-    background: linear-gradient(rgba(192, 192, 192, 0.85), rgba(255, 255, 255, 0.85)), url('https://unsplash.com') no-repeat center center/cover;
-    padding: 100px 0;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 40px;
-    color: #111111;
-    margin-bottom: 20px;
-}
-
-
-.hero p {
-    font-size: 18px;
-    color: #16A34A;
-    margin-bottom: 30px;
-}
-
-/* Botões */
-.btn {
-    background-color: var(--verde-principal);
-    color: #111111;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    display: inline-block;
-}
-
-.btn:hover {
-    background-color: var(--verde-escuro);
-    color: #16A34A;
-}
-
-.btn-block {
-    width: 100%;
-    margin-top: 10px;
-}
-
-/* Seção do Formulário */
-.rent-section {
-    padding: 60px 0;
-    background-color: #16A34A;
-}
-
-.form-container {
-    max-width: 600px;
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    border-top: 5px solid var(--verde-principal);
-}
-
-.form-container h2 {
-    text-align: center;
-    margin-bottom: 10px;
-    color: #16A34A;
-}
-
-.form-container p {
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 30px;
+    color: #596579;
     font-size: 14px;
 }
 
-/* Grupos do Formulário */
-.form-group {
-    margin-bottom: 20px;
+.botao {
+    display: inline-block;
+
+    background: #16a34a;
+    color: white;
+
+    padding: 10px 22px;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.form-row {
+.botao:hover {
+    background: #12853d;
+}
+
+
+/* =====================
+   INÍCIO
+===================== */
+
+.inicio {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 90px 30px;
+
     display: flex;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+.texto {
+    width: 45%;
+}
+
+.texto small,
+.catalogo > small,
+.formulario > small {
+    color: #16a34a;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    font-size: 10px;
+}
+
+.texto h1 {
+    font-size: 48px;
+
+    line-height: 1;
+
+    margin: 25px 0;
+}
+
+.texto h1 span {
+    color: #16a34a;
+}
+
+.texto p {
+    color: #657083;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+.grande {
+    padding: 14px 25px;
+}
+
+.link {
+    margin-left: 15px;
+
+    color: #526078;
+
+    font-size: 14px;
+}
+
+
+/* NÚMEROS */
+
+.numeros {
+    display: flex;
+
+    gap: 45px;
+
+    margin-top: 40px;
+}
+
+.numeros b {
+    font-size: 14px;
+}
+
+.numeros p {
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    margin-top: 10px;
+}
+
+
+/* IMAGEM */
+
+.imagem-principal {
+    width: 50%;
+
+    position: relative;
+}
+
+.imagem-principal img {
+    width: 100%;
+
+    height: 330px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+}
+
+.aviso {
+    position: absolute;
+
+    bottom: -20px;
+    left: -20px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px #0002;
+}
+
+
+/* =====================
+   COMO FUNCIONA
+===================== */
+
+.como {
+    background: #eef3f7;
+
+    padding: 55px 10%;
+}
+
+.como h2 {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+.passos {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: flex;
+
     gap: 20px;
 }
 
-.form-row .form-group {
+.passo {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 16px;
+
     flex: 1;
+
+    position: relative;
+}
+
+.passo strong {
+    color: #16a34a;
+
+    font-size: 11px;
+}
+
+.passo h3 {
+    margin: 15px 0 8px;
+}
+
+.passo p {
+    color: #667085;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================
+   CATÁLOGO
+===================== */
+
+.catalogo {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 60px 30px;
+}
+
+.catalogo h2 {
+    margin: 10px 0 25px;
+}
+
+.bikes {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+.bike {
+    background: white;
+
+    border: 1px solid #e2e6e9;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    padding-bottom: 15px;
+}
+
+.bike img {
+    width: 100%;
+
+    height: 120px;
+
+    object-fit: cover;
+}
+
+.bike small {
+    display: block;
+
+    color: #16a34a;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    margin: 12px;
+}
+
+.bike h3 {
+    font-size: 14px;
+
+    margin: 0 12px 8px;
+}
+
+.bike p {
+    color: #667085;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+
+    margin: 0 12px 15px;
+}
+
+.bike span {
+    display: block;
+
+    color: #999;
+
+    font-size: 9px;
+
+    margin: 0 12px 3px;
+}
+
+.bike > b {
+    display: block;
+
+    margin: 0 12px 12px;
+}
+
+.bike .botao {
+    margin: 0 12px;
+
+    width: calc(100% - 24px);
+
+    text-align: center;
+
+    padding: 9px;
+
+    font-size: 11px;
+}
+
+.bike button {
+    margin: 0 12px;
+
+    width: calc(100% - 24px);
+
+    padding: 9px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: #edf0f2;
+
+    color: #999;
+}
+
+
+/* =====================
+   BANNER
+===================== */
+
+.banner {
+    margin-top: 10px;
+
+    padding: 30px;
+
+    background: #159447;
+
+    color: white;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.banner h2 {
+    margin-bottom: 8px;
+}
+
+.banner p {
+    font-size: 12px;
+}
+
+.banner a {
+    background: white;
+
+    color: #159447;
+
+    padding: 12px 20px;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* =====================
+   FORMULÁRIO
+===================== */
+
+.formulario {
+    max-width: 760px;
+
+    margin: auto;
+
+    padding: 45px 20px;
+}
+
+.formulario h1 {
+    margin: 12px 0 25px;
+}
+
+.bike-escolhida {
+    background: white;
+
+    border: 1px solid #e2e6e9;
+
+    border-radius: 12px;
+
+    padding: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.bike-escolhida img {
+    width: 70px;
+
+    height: 50px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+.bike-escolhida small {
+    font-size: 8px;
+}
+
+.bike-escolhida p {
+    font-size: 11px;
+}
+
+.bike-escolhida > strong {
+    margin-left: auto;
+
+    margin-right: 10px;
+}
+
+
+/* FORM */
+
+form {
+    background: transparent;
+}
+
+form h4 {
+    color: #758095;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    margin: 25px 0 12px;
 }
 
 label {
     display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: #16A34A;
-    font-size: 14px;
+
+    font-size: 10px;
+
+    margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
-select {
+input {
     width: 100%;
-    padding: 12px;
-    border: 1px solid var(--borda);
-    border-radius: 5px;
-    background-color: #ecf0f1;
-    font-size: 15px;
-    color: #111111;
-    outline: none;
-    transition: border-color 0.3s;
+
+    padding: 11px;
+
+    border: 1px solid #d9dfe5;
+
+    border-radius: 6px;
+
+    background: white;
+
+    margin-bottom: 12px;
 }
 
-input:focus,
-select:focus {
-    border-color: var(--verde-principal);
+.linha {
+    display: flex;
+
+    gap: 10px;
 }
 
-/* Rodapé */
-.footer {
+.linha > div {
+    flex: 1;
+}
+
+
+/* VALOR */
+
+.valor {
+    background: #edfff4;
+
+    border: 1px solid #a8e8bf;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 10px;
+}
+
+.valor span {
+    display: block;
+
+    font-size: 12px;
+}
+
+.valor small {
+    font-size: 8px;
+}
+
+.valor strong {
+    color: #087b35;
+
+    font-size: 18px;
+}
+
+.confirmar {
+    width: 100%;
+
+    margin-top: 12px;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #16a34a;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* =====================
+   CONFIRMAÇÃO
+===================== */
+
+.confirmacao {
+    min-height: 80vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
     text-align: center;
-    padding: 30px 0;
-    border-top: 1px solid var(--cinza-claro);
-    background-color: #ffffff;
-    color: #999999;
-    font-size: 14px;
 }
 
-/* Responsividade Básica */
-@media (max-width: 768px) {
-    .form-row {
+.check {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: #d9fbe5;
+
+    color: #16a34a;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+.confirmacao h1 {
+    margin-bottom: 10px;
+}
+
+.confirmacao p {
+    color: #687386;
+
+    font-size: 12px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =====================
+   RODAPÉ
+===================== */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+
+/* =====================
+   CELULAR
+===================== */
+
+@media (max-width: 800px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    .inicio {
         flex-direction: column;
+
+        padding: 50px 20px;
+    }
+
+    .texto {
+        width: 100%;
+    }
+
+    .imagem-principal {
+        width: 100%;
+    }
+
+    .bikes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .passos {
+        flex-direction: column;
+    }
+
+    .linha {
+        flex-direction: column;
+
         gap: 0;
     }
-    .hero h1 {
-        font-size: 30px;
+}
+
+
+@media (max-width: 500px) {
+
+    nav a:not(.botao) {
+        display: none;
     }
-}
 
-/* Banner */
-.banner {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://unsplash.com') no-repeat center center/cover;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding: 20px;
-}
+    .texto h1 {
+        font-size: 38px;
+    }
 
-.banner h1 {
-    font-size: 38px;
-    margin-bottom: 10px;
-}
+    .bikes {
+        grid-template-columns: 1fr;
+    }
 
-/* Catálogo */
-.catalogo {
-    padding: 60px 5%;
-    text-align: center;
-}
+    .banner {
+        flex-direction: column;
 
-.catalogo h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
+        align-items: flex-start;
 
-.catalogo p {
-    color: #16A34A;
-    margin-bottom: 40px;
-}
+        gap: 20px;
+    }
 
-.grid-bikes {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-/* Cartão da Bike (Tornando a foto e o botão clicáveis) */
-.card-bike {
-    background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card-bike:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-.card-bike img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.card-info {
-    padding: 20px;
-}
-
-.card-info h3 {
-    margin-bottom: 10px;
-    color: #159946;
-}
-
-.card-info p {
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-.btn-alugar {
-    display: block;
-    background-color: #16A34A;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.card-bike:hover .btn-alugar {
-    background-color: #16A34A;
-}
-
-/* Seção do Formulário */
-.secao-formulario {
-    background-color: #ecf0f1;
-    padding: 60px 5%;
-    display: flex;
-    justify-content: center;
-}
-
-.container-form {
-    background-color: white;
-    padding: 40px;
-    border-radius: 8px;
-    max-width: 500px;
-    width: 100%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-.container-form h2 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.container-form p {
-    font-size: 14px;
-    color: #16A34A;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.campo {
-    margin-bottom: 20px;
-}
-
-.campo label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-}
-
-.campo input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #999999;
-    border-radius: 5px;
-    outline: none;
-    font-size: 16px;
-}
-
-.campo input:focus {
-    border-color: #16A34A;
-}
-
-.btn-enviar {
-    width: 100%;
-    background-color: #16A34A;
-    color: #111111;
-    padding: 14px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn-enviar:hover {
-    background-color: #159946;
-}
-
- h1 {
-color: #1a1a1a;
-font-size: 24px;
-margin-bottom: 10px;
-}
-
-p {
-font-size: 14px;
-color: #1a1a1a;
-line-height: 1.6;
-}
-
-.passos-lista {
-list-style: none;
-padding: 0;
-margin: 25px 0;
-}
-
-.passo-item {
-display: flex;
-align-items: center;
-margin-bottom: 15px;
-padding: 10px;
-border-left: 4px solid #2ecc71; /* Detalhe em Verde */
-background-color: #f9f9f9;
-}
-
-.numero-passo {
-font-weight: bold;
-color: #2ecc71; /* Verde */
-margin-right: 10px;
-font-size: 18px;
+    .numeros {
+        gap: 20px;
+    }
 }
