@@ -189,28 +189,28 @@
                     ELÉTRICA
                 </small>
                 <h3>
-                    KBO E-Bike Breeze
+                KBO E-Bike Breeze
                 </h3>
                 <p>
-                    Motor elétrico com autonomia
-                    para longas distâncias.
+                Motor elétrico com autonomia
+                para longas distâncias.
                 </p>
                 <span>
-                    A partir de
+                A partir de
                 </span>
                 <b>
-                    R$ 75/dia
+                R$ 75/dia
                 </b>
                 <button
-                    onclick="abrirReserva('KBO E-Bike Breeze', 75)">
-                    Alugue sua bike
+                onclick="abrirReserva('KBO E-Bike Breeze', 75)">
+                Alugue sua bike
                 </button>
             </div>
 
             <!-- BIKE 4 -->
 
             <div class="bike">
-                <img src="imagens/bike4.jpg">
+                <img src="imagens/bike 4.avif">
                 <small>
                 SPEED / ESTRADA
                 </small>
@@ -227,255 +227,181 @@
                 <b>
                 R$ 60/dia
                 </b>
-
-
                 <button disabled>
-
                     Indisponível
-
                 </button>
-
             </div>
-
-
         </div>
-
-
 
         <!-- BANNER -->
 
         <div class="banner">
-
             <div>
-
                 <h2>
-                    Pronto para pedalar?
+                 Pronto para pedalar?
                 </h2>
-
                 <p>
-
-                    Faça sua reserva agora e aproveite
-                    a liberdade sobre duas rodas.
-
+                Faça sua reserva agora e aproveite
+                a liberdade sobre duas rodas.
                 </p>
-
             </div>
-
-
             <a href="#bikes">
-
-                Alugue sua bike →
-
+            Alugue sua bike →
             </a>
-
         </div>
-
-
     </section>
-
-
 </div>
 
-
-
-<!-- =========================
-     PÁGINA DE RESERVA
-========================= -->
+<!-- PÁGINA DE RESERVA -->
 
 <div id="paginaReserva"
      class="esconder">
-
-
     <main class="formulario">
-
         <a href="#bikes"
-           onclick="voltarCatalogo()">
-
-            ← Voltar
-
+        onclick="voltarCatalogo()">
+        ← Voltar
         </a>
-
-
         <small>
-            FORMULÁRIO DE RESERVA
+        FORMULÁRIO DE RESERVA
         </small>
-
         <h1>
-            Finalize seu aluguel
+        Finalize seu aluguel
         </h1>
-
-
 
         <!-- BIKE ESCOLHIDA -->
 
         <div class="bike-escolhida">
-
             <img id="imagemBike"
-                 src="imagens/bike1.jpg">
-
-
+            src="imagens/bike 2.avif">
             <div>
-
-                <small id="tipoBike">
-                    MOUNTAIN BIKE
-                </small>
-
+            <small id="tipoBike">
+            MOUNTAIN BIKE
+            </small>
                 <h3 id="nomeBike">
-                    Trek X-Cal 29
+                Trek X-Cal 29
                 </h3>
-
                 <p>
-                    R$ <span id="precoBike">45</span>
-                    / dia
+                R$ <span id="precoBike">45</span>
+                / dia
                 </p>
-
             </div>
-
-
             <strong>
-                R$ <span id="valorTotal">90</span>,00
+            R$ <span id="valorTotal">90</span>,00
             </strong>
-
         </div>
-
-
 
         <!-- FORMULÁRIO -->
 
         <form id="formularioReserva">
-
-
             <h4>
-                DADOS PESSOAIS
+            DADOS PESSOAIS
             </h4>
-
+            <label>
+            Nome completo *
+            </label>
+            <input
+            type="text"
+            id="nome"
+            placeholder="Ex: Maria Silva"
+            required
+            >
 
             <label>
-                Nome completo *
+           Telefone *
             </label>
 
             <input
+            type="tel"
+            placeholder="(11) 99999-0000"                required
+            >
+
+            <h4>
+           ENDEREÇO COMPLETO
+            </h4>
+
+            <div class="linha">
+                <div>
+                <label>CEP *</label>
+
+                <input
                 type="text"
-                id="nome"
-                placeholder="Ex: Maria Silva"
+                placeholder="00000-000"
                 required
-            >
+                 >
 
-
-            <label>
-                Telefone *
-            </label>
-
-            <input
-                type="tel"
-                placeholder="(11) 99999-0000"
-                required
-            >
-
-
-
-            <h4>
-                ENDEREÇO COMPLETO
-            </h4>
-
-
-            <div class="linha">
+                </div>
 
                 <div>
+                    <label>
+                    Logradouro *
+                    </label>
+                    <input
+                    type="text"
+                    placeholder="Rua, Avenida, etc."
+                    required
+                    >
+                </div>
 
-                    <label>CEP *</label>
+            </div>
+
+            <div class="linha">
+                <div>
+
+                    <label>
+                    Número *
+                    </label>
 
                     <input
-                        type="text"
-                        placeholder="00000-000"
-                        required
+                    type="text"
+                    placeholder="123"
+                    required
                     >
 
                 </div>
 
+                <div>
+
+                    <label>
+                    Bairro *
+                    </label>
+
+                    <input
+                    type="text"
+                    placeholder="Nome do bairro"
+                    required
+                    >
+
+                </div>
 
                 <div>
 
                     <label>
-                        Logradouro *
+                    Cidade *
                     </label>
 
                     <input
-                        type="text"
-                        placeholder="Rua, Avenida, etc."
-                        required
+                    type="text"
+                    placeholder="São Paulo"
+                    required
+                    >
+
+                </div>
+
+                <div>
+
+                    <label>
+                    UF *
+                    </label>
+
+                    <input
+                    type="text"
+                    placeholder="SP"
+                   required
                     >
 
                 </div>
 
             </div>
-
-
-
-            <div class="linha">
-
-                <div>
-
-                    <label>
-                        Número *
-                    </label>
-
-                    <input
-                        type="text"
-                        placeholder="123"
-                        required
-                    >
-
-                </div>
-
-
-                <div>
-
-                    <label>
-                        Bairro *
-                    </label>
-
-                    <input
-                        type="text"
-                        placeholder="Nome do bairro"
-                        required
-                    >
-
-                </div>
-
-
-                <div>
-
-                    <label>
-                        Cidade *
-                    </label>
-
-                    <input
-                        type="text"
-                        placeholder="São Paulo"
-                        required
-                    >
-
-                </div>
-
-
-                <div>
-
-                    <label>
-                        UF *
-                    </label>
-
-                    <input
-                        type="text"
-                        placeholder="SP"
-                        required
-                    >
-
-                </div>
-
-            </div>
-
-
 
             <h4>
                 PERÍODO DO EMPRÉSTIMO
