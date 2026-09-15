@@ -75,7 +75,7 @@ root {
 
 /* Seção Hero (Banner) */
 .hero {
-    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('https://unsplash.com') no-repeat center center/cover;
+    background: linear-gradient(rgba(192, 192, 192, 0.85), rgba(255, 255, 255, 0.85)), url('https://unsplash.com') no-repeat center center/cover;
     padding: 100px 0;
     text-align: center;
 }
