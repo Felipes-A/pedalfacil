@@ -57,7 +57,6 @@ nav a {
     background: #12853d;
 }
 
-
 /* =====================
    INÍCIO
 ===================== */
@@ -110,7 +109,6 @@ nav a {
     font-size: 14px;
 }
 
-
 /* NÚMEROS */
 
 .numeros {
@@ -153,7 +151,6 @@ nav a {
     border-radius: 15px;
     box-shadow: 0 10px 30px #0002;
 }
-
 
 /* =====================
    COMO FUNCIONA
@@ -198,7 +195,6 @@ nav a {
     font-size: 13px;
     line-height: 1.5;
 }
-
 
 /* =====================
    CATÁLOGO
@@ -285,7 +281,6 @@ nav a {
     color: #999;
 }
 
-
 /* =====================
    BANNER
 ===================== */
@@ -318,7 +313,6 @@ nav a {
     font-size: 12px;
     font-weight: bold;
 }
-
 
 /* =====================
    FORMULÁRIO
@@ -365,7 +359,6 @@ nav a {
     margin-right: 10px;
 }
 
-
 /* FORM */
 
 form {
@@ -402,7 +395,6 @@ input {
 .linha > div {
     flex: 1;
 }
-
 
 /* VALOR */
 
@@ -443,7 +435,6 @@ input {
     cursor: pointer;
 }
 
-
 /* =====================
    CONFIRMAÇÃO
 ===================== */
@@ -480,7 +471,6 @@ input {
     margin-bottom: 25px;
 }
 
-
 /* =====================
    RODAPÉ
 ===================== */
@@ -492,23 +482,15 @@ footer {
     font-size: 12px;
 }
 
-
 /* =====================
    CELULAR
 ===================== */
 
 @media (max-width: 800px) {
-    header {
-        padding: 0 5%;
-    }
+    header {padding: 0 5%;}
     .inicio {
-        flex-direction: column;
-
-        padding: 50px 20px;
-    }
-    .texto {
-        width: 100%;
-    }
+    flex-direction: column; padding: 50px 20px;}
+    .texto {width: 100%;}
     .imagem-principal {
         width: 100%;
     }
