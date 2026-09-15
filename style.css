@@ -498,25 +498,11 @@ footer {
 
 
 @media (max-width: 500px) {
-    nav a:not(.botao) {
-        display: none;
-    }
-    .texto h1 {
-        font-size: 38px;
-    }
-    .bikes {
-        grid-template-columns: 1fr;
-    }
-    .banner {
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 20px;
-    }
-    .numeros {
-        gap: 20px;
-    }
+    nav a:not(.botao) {display: none;}
+    .texto h1 {font-size: 38px;}
+    .bikes {grid-template-columns: 1fr;}
+    .banner {flex-direction: column; align-items: flex-start; gap: 20px;}
+    .numeros {gap: 20px;}
 }
 .esconder {
     display: none;
