@@ -480,3 +480,6 @@ footer {
     .numeros {gap: 20px;}
 }
 
+.esconder{
+    display: none;
+}
