@@ -109,8 +109,8 @@ nav a {
 
 .numeros {
     display: flex;
-    gap: 45px;
-    margin-top: 40px;
+    gap: 55px;
+    margin-top: 50px;
 }
 
 .numeros b {
